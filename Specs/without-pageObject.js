@@ -3,6 +3,6 @@ describe('angularjs homepage', function() {
     browser.get('http://www.angularjs.org');
     element(by.model('yourName')).sendKeys('Pibe Valderrama');
     var greeting = element(by.binding('yourName'));
-    expect(greeting.getText()).toEqual('Hello Julie!');
+    expect(greeting.getText()).toEqual('Hello Pibe Valderrama!');
   });
 });
